@@ -1,0 +1,30 @@
+// colors
+$darkCalm: #303C42;
+$yellowSmooth:#FFFBED;
+
+
+
+// fonts
+@font-face{
+  font-family: 'Amatic SC';
+  font-weight: normal;
+  src: url('../assets/fonts/Amatic_SC/AmaticSC-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Amatic SC';
+  font-weight: bold;
+  src: url('../assets/fonts/Amatic_SC/AmaticSC-Bold.ttf');
+}
+
+@font-face{
+  font-family: 'Open Sans';
+  font-weight: 300;
+  src: url('../assets/fonts/Open_Sans/OpenSans-Light.ttf');
+}
+
+@font-face{
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+}
