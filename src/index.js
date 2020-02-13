@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.css';
 import './styles/index.scss';
 import Main from './containers';
 import Navbar from './components/navbar';
 import * as serviceWorker from './serviceWorker';
 
+
 const App = () =>(
-  <div className='main-container'>
+  <div className='container main-container'>
     <Navbar />
     <div className='main-content'>
       <Route exact={true} path='/' component={Main} />
