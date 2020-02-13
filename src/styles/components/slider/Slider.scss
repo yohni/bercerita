@@ -1,5 +1,5 @@
 .slider-wrapper{
-  display: inline-flex;
+  display: flex;
   width: 100%;
   position: relative; 
   align-items: center;
@@ -7,12 +7,19 @@
 
   .arrow{
     cursor: pointer;
-    position: absolute;
+    position: relative;
+    min-width: 24px;
+    min-height: 24px;
+
+    @media (max-width:767px) {
+      display: none;
+    }
   }
 
   .l-arrow{
     z-index: 99;
     left: 0;
+
   }
 
   .r-arrow{
@@ -21,15 +28,27 @@
   }
 
   .slider-container{
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: visible;
-    transition: all 0.25s;
-    flex-wrap: nowrap;
-    ::-webkit-scrollbar {
-      width: 0px; /* remove scrollbar space */
-      background: transparent; /* optional: just make scrollbar invisible */
+    overflow: hidden;
+    
+    .slider-clip{
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: visible;
+      height: 390px;
+      transition: all 0.25s;
+      flex-wrap: nowrap;
+      ::-webkit-scrollbar {
+        width: 0px; /* remove scrollbar space */
+        background: transparent; /* optional: just make scrollbar invisible */
+      }
+      @media (max-width: 767px) {
+        overflow-x: visible;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+
+        padding: 0 16px;
+      }
     }
   }
 }
