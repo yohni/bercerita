@@ -1,0 +1,95 @@
+.card-wrapper{
+  width: 218px;
+  min-width: 218px;
+  height: 390px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 17.82px;
+
+  .card-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 390px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, rgba(107, 213, 225, 0.72) 0%, rgba(255, 217, 142, 0.72) 100%);
+
+    &:hover ~ .project-more{
+      transform: translateY(0);
+    }
+    &:hover ~ .card-detail{
+      transform: translateY(0);
+    }
+    &:hover ~ .project-name{
+      transform: translateY(-300px);
+    }
+
+    
+  }
+  .project-more{
+    position: absolute;
+    bottom: 17.36px;
+    right: 15px;
+    z-index: 2;
+    transform: translateY(300px);
+    transition: all 0.75s;
+    background: $blueRomance;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 4px 12px;
+
+    &:hover{
+      transform: translateY(0);
+      background: $blueDark;
+    }
+
+    &:hover ~ .card-detail{
+      transform: translateY(0);
+    }
+    &:hover ~ .project-name{
+      transform: translateY(-300px);
+    }
+  }
+
+  .card-detail{
+    transform: translateY(390px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 390px;
+    background: $yellowFederal;
+    border-radius: 3px;
+    transition: all 0.5s;
+    pointer-events: none;
+
+    padding: 64px 16px;
+
+    p{
+      font-size: 12px;
+      font-family: "Open Sans", Helvetica, sans-serif;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 12;
+      -webkit-box-orient: vertical;  
+    }
+    
+  }
+  .project-name{
+    position: absolute;
+    left: 15px;
+    bottom: 17.36px;
+    font-weight: bold;
+    font-size: 24px;
+    transition: all 0.5s;
+    pointer-events: none;
+
+  }
+
+  
+  
+
+}
