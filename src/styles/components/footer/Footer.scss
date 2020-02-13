@@ -1,0 +1,19 @@
+.footer-wrapper{
+  height: 200px;
+  padding-top: 80px;
+  padding-bottom: 24px;
+
+  .footer-social{
+    margin-bottom: 58px;
+
+
+    .social-icon{
+      margin: 8px 16px;
+      transition: all 0.25s ease;
+
+      &:hover{
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

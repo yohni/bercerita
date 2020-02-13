@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import WorkingTable from '../assets/images/WorkingTable.png';
 import About from '../assets/images/About.png';
+import NatureMan from '../assets/images/NatureMan.png';
+import WorkingTable from '../assets/images/WorkingTable.png';
+
 import project1 from '../assets/images/project1.jpg';
 
 import Card from '../components/card';
+import JustTag from '../components/justTag';
+import { Phone,Pin } from '../components/icons';
 import Slider from '../components/slider';
 
 class Main extends Component {
@@ -54,6 +58,21 @@ class Main extends Component {
               <Card src={project1} />
               <Card src={project1} />
             </Slider>
+        </div>
+
+        {/* contact */}
+        <div className='contact'>
+          <img className='contact-illustration' src={NatureMan} alt='Nature Man' />
+          <h1 className='contact-title'>KONTAK</h1>
+          <h2 className='contact-sub'>Ayo Berteman!</h2>
+          <div className='contact-main ml-5 mt-4'>
+            <JustTag text='Sleman, DIY'>
+              <Pin />
+            </JustTag>
+            <JustTag text='+62856-4870-5773'>
+              <Phone />
+            </JustTag>
+          </div>
         </div>
       </div>
     );
