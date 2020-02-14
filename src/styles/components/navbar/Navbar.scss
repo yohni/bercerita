@@ -89,6 +89,16 @@
       .navlink{
         margin-left: 16px;
 
+        a{
+          text-decoration: none;
+          color: $darkCalm;
+
+          &:hover{
+            text-decoration: none;
+            color: black;
+          }
+        }
+
         @media (max-width:375px) {
           margin: 8px 0;
         }
