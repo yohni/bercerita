@@ -18,7 +18,7 @@ const Footer = props => (
           <SocialLinkedIn />
         </a>
       </div>
-      <div className='text-center'>&copy; Copyright 2020 Mindyksi &bull; Made with <span className='text-danger'>&hearts;</span> in DIY</div>
+      <div className='text-center mb-4'>&copy; Copyright 2020 Mindyksi &bull; Made with <span className='text-danger'>&hearts;</span> in DIY</div>
     </div>
   </footer>
 );
