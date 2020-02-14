@@ -3,11 +3,13 @@
 @import './components/card/Card.scss';
 @import './components/footer/Footer.scss';
 @import './components/justTag/JustTag.scss';
+@import './components/modal/Modal.scss';
 @import './components/navbar/Navbar.scss';
+@import './components/modal/Prolog.scss';
 @import './components/slider/Slider.scss';
 
 html{
-
+  scroll-behavior: smooth;
 
   body{
     background: $yellowSmooth;
@@ -44,7 +46,7 @@ html{
           .header-prolog{
             margin: 34px 0 24px;
             background: $blueRomance;
-            color: $yellowSmooth;
+            color: $darkCalm;
             border-radius: 25px;
             padding: 5px 26px;
             font-weight: bold;
@@ -137,3 +139,4 @@ html{
     }
   } 
 }
+
