@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bercerita/static/css/main.cd45900d.chunk.css",
-    "main.js": "/bercerita/static/js/main.0fe3c8fc.chunk.js",
-    "main.js.map": "/bercerita/static/js/main.0fe3c8fc.chunk.js.map",
+    "main.js": "/bercerita/static/js/main.becbfa09.chunk.js",
+    "main.js.map": "/bercerita/static/js/main.becbfa09.chunk.js.map",
     "runtime-main.js": "/bercerita/static/js/runtime-main.6c115bba.js",
     "runtime-main.js.map": "/bercerita/static/js/runtime-main.6c115bba.js.map",
     "static/css/2.67123b20.chunk.css": "/bercerita/static/css/2.67123b20.chunk.css",
     "static/js/2.8a28bb8c.chunk.js": "/bercerita/static/js/2.8a28bb8c.chunk.js",
     "static/js/2.8a28bb8c.chunk.js.map": "/bercerita/static/js/2.8a28bb8c.chunk.js.map",
     "index.html": "/bercerita/index.html",
-    "precache-manifest.4dc6c9025099106c0ceb17ea48901cd9.js": "/bercerita/precache-manifest.4dc6c9025099106c0ceb17ea48901cd9.js",
+    "precache-manifest.e474c851c7226db99e450a445bcc3700.js": "/bercerita/precache-manifest.e474c851c7226db99e450a445bcc3700.js",
     "service-worker.js": "/bercerita/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/bercerita/static/css/2.67123b20.chunk.css.map",
     "static/css/main.cd45900d.chunk.css.map": "/bercerita/static/css/main.cd45900d.chunk.css.map",
@@ -24,6 +24,6 @@
     "static/css/2.67123b20.chunk.css",
     "static/js/2.8a28bb8c.chunk.js",
     "static/css/main.cd45900d.chunk.css",
-    "static/js/main.0fe3c8fc.chunk.js"
+    "static/js/main.becbfa09.chunk.js"
   ]
 }

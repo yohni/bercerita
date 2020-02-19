@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd97f5a9d6f122793b95252b25bf439d",
+    "revision": "b61cb79b3505b9e5a5bd606fa80becc5",
     "url": "/bercerita/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bercerita/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "aac6de92151869698ba0",
+    "revision": "a8c5b0d1092c80e10e7b",
     "url": "/bercerita/static/css/main.cd45900d.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bercerita/static/js/2.8a28bb8c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aac6de92151869698ba0",
-    "url": "/bercerita/static/js/main.0fe3c8fc.chunk.js"
+    "revision": "a8c5b0d1092c80e10e7b",
+    "url": "/bercerita/static/js/main.becbfa09.chunk.js"
   },
   {
     "revision": "35abded54050d788f8ca",
