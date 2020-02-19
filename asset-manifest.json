@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bercerita/static/css/main.1c3091c4.chunk.css",
+    "main.css": "/bercerita/static/css/main.f5b2a054.chunk.css",
     "main.js": "/bercerita/static/js/main.becbfa09.chunk.js",
     "main.js.map": "/bercerita/static/js/main.becbfa09.chunk.js.map",
     "runtime-main.js": "/bercerita/static/js/runtime-main.6c115bba.js",
@@ -9,10 +9,10 @@
     "static/js/2.8a28bb8c.chunk.js": "/bercerita/static/js/2.8a28bb8c.chunk.js",
     "static/js/2.8a28bb8c.chunk.js.map": "/bercerita/static/js/2.8a28bb8c.chunk.js.map",
     "index.html": "/bercerita/index.html",
-    "precache-manifest.771085a815d540f60d88ad5ba93d12c3.js": "/bercerita/precache-manifest.771085a815d540f60d88ad5ba93d12c3.js",
+    "precache-manifest.f5c42cfd3e35cf2ef9a0d3d91510e98b.js": "/bercerita/precache-manifest.f5c42cfd3e35cf2ef9a0d3d91510e98b.js",
     "service-worker.js": "/bercerita/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/bercerita/static/css/2.67123b20.chunk.css.map",
-    "static/css/main.1c3091c4.chunk.css.map": "/bercerita/static/css/main.1c3091c4.chunk.css.map",
+    "static/css/main.f5b2a054.chunk.css.map": "/bercerita/static/css/main.f5b2a054.chunk.css.map",
     "static/js/2.8a28bb8c.chunk.js.LICENSE.txt": "/bercerita/static/js/2.8a28bb8c.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/bercerita/static/media/OpenSans-Regular.3ed9575d.ttf",
     "static/media/NatureMan.png": "/bercerita/static/media/NatureMan.1dce24d6.png",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.6c115bba.js",
     "static/css/2.67123b20.chunk.css",
     "static/js/2.8a28bb8c.chunk.js",
-    "static/css/main.1c3091c4.chunk.css",
+    "static/css/main.f5b2a054.chunk.css",
     "static/js/main.becbfa09.chunk.js"
   ]
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bercerita/precache-manifest.771085a815d540f60d88ad5ba93d12c3.js"
+  "/bercerita/precache-manifest.f5c42cfd3e35cf2ef9a0d3d91510e98b.js"
 );
 
 self.addEventListener('message', (event) => {
