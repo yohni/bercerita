@@ -33,12 +33,16 @@ class Main extends Component {
         <Modal closeModal={this.handleModalClose} isShow={this.state.showModal}>
           <div className="prolog">
             <h2 className="h2 prolog-title">Prolog</h2>
-            <p>Hallo temen - temen...<br/>
-              Jadi lewat mindyksi ini, <br/>nantinya aku akan bercerita segala sesuatu <br/>mulai dari pekerjaan, pengalaman, dll.
+            <p>
+              Hallo temen - temen...
+              <br />
+              Jadi lewat mindyksi ini, <br />
+              nantinya aku akan bercerita segala sesuatu <br />
+              mulai dari pekerjaan, pengalaman, dll.
             </p>
             <br />
             <br />
-            <span><p>Selamat berbahagia semuanya... ✌</p></span>
+            <p>Selamat berbahagia semuanya... <span><input style={{border:'none', background:'none'}} value='😘' disabled /></span></p>
           </div>
         </Modal>
 
