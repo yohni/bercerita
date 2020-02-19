@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de21fdb8.chunk.css",
+    "main.js": "/static/js/main.724c30bd.chunk.js",
+    "main.js.map": "/static/js/main.724c30bd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b4575bd3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b4575bd3.js.map",
+    "static/css/2.67123b20.chunk.css": "/static/css/2.67123b20.chunk.css",
+    "static/js/2.8a28bb8c.chunk.js": "/static/js/2.8a28bb8c.chunk.js",
+    "static/js/2.8a28bb8c.chunk.js.map": "/static/js/2.8a28bb8c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bc2134d263538ae24f59991845dbbce1.js": "/precache-manifest.bc2134d263538ae24f59991845dbbce1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.67123b20.chunk.css.map": "/static/css/2.67123b20.chunk.css.map",
+    "static/css/main.de21fdb8.chunk.css.map": "/static/css/main.de21fdb8.chunk.css.map",
+    "static/js/2.8a28bb8c.chunk.js.LICENSE.txt": "/static/js/2.8a28bb8c.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/OpenSans-Regular.3ed9575d.ttf",
+    "static/media/NatureMan.png": "/static/media/NatureMan.1dce24d6.png",
+    "static/media/WorkingTable.png": "/static/media/WorkingTable.a7b29c14.png",
+    "static/media/project1.jpg": "/static/media/project1.c7c27c56.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4575bd3.js",
+    "static/css/2.67123b20.chunk.css",
+    "static/js/2.8a28bb8c.chunk.js",
+    "static/css/main.de21fdb8.chunk.css",
+    "static/js/main.724c30bd.chunk.js"
+  ]
+}
