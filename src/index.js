@@ -14,7 +14,7 @@ const App = () =>(
   <div className='container main-container'>
     <Navbar />
     <div className='main-content'>
-      <Route exact={true} path='/' component={Main} />
+      <Route path='/' component={Main} />
     </div>
     <Footer />
   </div>
