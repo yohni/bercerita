@@ -38,9 +38,8 @@
       height: 390px;
       transition: all 0.25s;
       flex-wrap: nowrap;
-      ::-webkit-scrollbar {
-        width: 0px; /* remove scrollbar space */
-        background: transparent; /* optional: just make scrollbar invisible */
+      &::-webkit-scrollbar {
+        display: none;
       }
       @media (max-width: 767px) {
         overflow-x: visible;
