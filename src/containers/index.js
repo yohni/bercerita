@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import LazyLoad from "react-lazy-load";
+
 import About from "../assets/images/About.png";
 import NatureMan from "../assets/images/NatureMan.png";
 import WorkingTable from "../assets/images/WorkingTable.png";
@@ -42,7 +44,16 @@ class Main extends Component {
             </p>
             <br />
             <br />
-            <p>Selamat berbahagia semuanya... <span><input style={{border:'none', background:'none'}} value='😘' disabled /></span></p>
+            <p>
+              Selamat berbahagia semuanya...{" "}
+              <span>
+                <input
+                  style={{ border: "none", background: "none" }}
+                  value="😘"
+                  disabled
+                />
+              </span>
+            </p>
           </div>
         </Modal>
 
@@ -60,11 +71,13 @@ class Main extends Component {
             </button>
           </div>
           <div className="col-0 col-md-6">
-            <img
-              className="header-illustration"
-              src={WorkingTable}
-              alt="Woking Table Images"
-            />
+            <LazyLoad width="100%">
+              <img
+                className="header-illustration"
+                src={WorkingTable}
+                alt="Woking Table Images"
+              />
+            </LazyLoad>
           </div>
         </div>
 
@@ -72,7 +85,9 @@ class Main extends Component {
         <div className="about" id="meId">
           <div className="about-banner row">
             <div className="col-12 col-md-6 mb-4 text-center d-flex align-items-center justify-content-center">
-              <img src={About} alt="About illustration" />
+              <LazyLoad width="100%">
+                <img src={About} alt="About illustration" />
+              </LazyLoad>
             </div>
             <div className="col-12 col-md-6 about-detail">
               <h1>Kenalan Dulu Yuk!</h1>
@@ -114,11 +129,11 @@ class Main extends Component {
 
         {/* contact */}
         <div className="contact" id="contactId">
-          <img
-            className="contact-illustration"
-            src={NatureMan}
-            alt="Nature Man"
-          />
+            <img
+              className="contact-illustration"
+              src={NatureMan}
+              alt="Nature Man"
+            />
           <h1 className="contact-title">KONTAK</h1>
           <h2 className="contact-sub">Ayo Berteman!</h2>
           <div className="contact-main ml-5 mt-4">
