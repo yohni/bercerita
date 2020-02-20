@@ -39,7 +39,7 @@ class Slider extends Component {
         </div>
       );
     } else {
-      arrowR = <div className="arrow r-arrow" onClick={this.nextSlide}></div>;
+      arrowR = <div className="arrow r-arrow"></div>;
     }
 
     return (
