@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d6420d4e37f7310144518a3475a8f1d",
+    "revision": "209de4b601c228fe9129e1789cb3d0c6",
     "url": "/bercerita/index.html"
   },
   {
-    "revision": "e8056f7c6501b197bf14",
+    "revision": "1c9949d43dad4e6f18df",
     "url": "/bercerita/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "69f2a0efc529fa47740f",
-    "url": "/bercerita/static/css/main.29401886.chunk.css"
+    "revision": "745f3d7a0e4abfb65b9d",
+    "url": "/bercerita/static/css/main.84c549da.chunk.css"
   },
   {
-    "revision": "e8056f7c6501b197bf14",
-    "url": "/bercerita/static/js/2.8a28bb8c.chunk.js"
+    "revision": "1c9949d43dad4e6f18df",
+    "url": "/bercerita/static/js/2.474a05ec.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/bercerita/static/js/2.8a28bb8c.chunk.js.LICENSE.txt"
+    "url": "/bercerita/static/js/2.474a05ec.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "69f2a0efc529fa47740f",
-    "url": "/bercerita/static/js/main.becbfa09.chunk.js"
+    "revision": "745f3d7a0e4abfb65b9d",
+    "url": "/bercerita/static/js/main.bbdd477b.chunk.js"
   },
   {
     "revision": "35abded54050d788f8ca",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bercerita/static/media/AmaticSC-Regular.e9a42e33.ttf"
   },
   {
-    "revision": "1dce24d6b0c51719257d20c82a1f6346",
-    "url": "/bercerita/static/media/NatureMan.1dce24d6.png"
+    "revision": "c15ad2f42cde737b7c8949dbd947a1c2",
+    "url": "/bercerita/static/media/NatureMan.c15ad2f4.png"
   },
   {
     "revision": "2d0bdc8df10dee036ca3bedf6f3647c6",
@@ -48,11 +48,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bercerita/static/media/OpenSans-Regular.3ed9575d.ttf"
   },
   {
-    "revision": "a7b29c14a457047c6dc634b58b5b1517",
-    "url": "/bercerita/static/media/WorkingTable.a7b29c14.png"
-  },
-  {
-    "revision": "c7c27c56cf336c4298ea3cf02590edf8",
-    "url": "/bercerita/static/media/project1.c7c27c56.jpg"
+    "revision": "817bf008b2a69b6860099341b5b3e618",
+    "url": "/bercerita/static/media/project1.817bf008.jpg"
   }
 ]);

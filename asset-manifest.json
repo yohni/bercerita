@@ -1,29 +1,28 @@
 {
   "files": {
-    "main.css": "/bercerita/static/css/main.29401886.chunk.css",
-    "main.js": "/bercerita/static/js/main.becbfa09.chunk.js",
-    "main.js.map": "/bercerita/static/js/main.becbfa09.chunk.js.map",
+    "main.css": "/bercerita/static/css/main.84c549da.chunk.css",
+    "main.js": "/bercerita/static/js/main.bbdd477b.chunk.js",
+    "main.js.map": "/bercerita/static/js/main.bbdd477b.chunk.js.map",
     "runtime-main.js": "/bercerita/static/js/runtime-main.6c115bba.js",
     "runtime-main.js.map": "/bercerita/static/js/runtime-main.6c115bba.js.map",
     "static/css/2.67123b20.chunk.css": "/bercerita/static/css/2.67123b20.chunk.css",
-    "static/js/2.8a28bb8c.chunk.js": "/bercerita/static/js/2.8a28bb8c.chunk.js",
-    "static/js/2.8a28bb8c.chunk.js.map": "/bercerita/static/js/2.8a28bb8c.chunk.js.map",
+    "static/js/2.474a05ec.chunk.js": "/bercerita/static/js/2.474a05ec.chunk.js",
+    "static/js/2.474a05ec.chunk.js.map": "/bercerita/static/js/2.474a05ec.chunk.js.map",
     "index.html": "/bercerita/index.html",
-    "precache-manifest.bbc185b913f52ed1809da1b42c8bac1d.js": "/bercerita/precache-manifest.bbc185b913f52ed1809da1b42c8bac1d.js",
+    "precache-manifest.3a20fadefc5fe6273cdbdebea5c6cdc2.js": "/bercerita/precache-manifest.3a20fadefc5fe6273cdbdebea5c6cdc2.js",
     "service-worker.js": "/bercerita/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/bercerita/static/css/2.67123b20.chunk.css.map",
-    "static/css/main.29401886.chunk.css.map": "/bercerita/static/css/main.29401886.chunk.css.map",
-    "static/js/2.8a28bb8c.chunk.js.LICENSE.txt": "/bercerita/static/js/2.8a28bb8c.chunk.js.LICENSE.txt",
+    "static/css/main.84c549da.chunk.css.map": "/bercerita/static/css/main.84c549da.chunk.css.map",
+    "static/js/2.474a05ec.chunk.js.LICENSE.txt": "/bercerita/static/js/2.474a05ec.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/bercerita/static/media/OpenSans-Regular.3ed9575d.ttf",
-    "static/media/NatureMan.png": "/bercerita/static/media/NatureMan.1dce24d6.png",
-    "static/media/WorkingTable.png": "/bercerita/static/media/WorkingTable.a7b29c14.png",
-    "static/media/project1.jpg": "/bercerita/static/media/project1.c7c27c56.jpg"
+    "static/media/NatureMan.png": "/bercerita/static/media/NatureMan.c15ad2f4.png",
+    "static/media/project1.jpg": "/bercerita/static/media/project1.817bf008.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6c115bba.js",
     "static/css/2.67123b20.chunk.css",
-    "static/js/2.8a28bb8c.chunk.js",
-    "static/css/main.29401886.chunk.css",
-    "static/js/main.becbfa09.chunk.js"
+    "static/js/2.474a05ec.chunk.js",
+    "static/css/main.84c549da.chunk.css",
+    "static/js/main.bbdd477b.chunk.js"
   ]
 }
