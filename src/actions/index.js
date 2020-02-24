@@ -6,7 +6,7 @@ const baseAPI = "https://mindyksi.firebaseio.com";
 export const getWorks = (works) => {
   return {
     type: GET_WORKS,
-    works
+    payload: works
   }
 }
 

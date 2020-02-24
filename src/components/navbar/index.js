@@ -34,7 +34,7 @@ class Navbar extends Component {
           </div>
           <ul className={`collapse ${this.state.menuOpen ? 'is-expanded' : ''}`}>
             <li className='navlink'><a href='#meId'>Tentang Aku</a></li>
-            <li className='navlink'><a href='#expId'>Pengalaman</a></li>
+            <li className='navlink'><a href='#expId'>Corat-Coret</a></li>
             <li className='navlink'><a href='#contactId'>Kontak</a></li>
           </ul>
         </div>

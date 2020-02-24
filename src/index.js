@@ -11,6 +11,8 @@ import Main from './containers';
 import Navbar from './components/navbar';
 import * as serviceWorker from './serviceWorker';
 
+// store.dispatch(getAllWorks());
+
 
 const App = () =>(
   <div className='container main-container'>

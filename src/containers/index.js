@@ -7,8 +7,6 @@ import About from "../assets/images/About.png";
 import NatureMan from "../assets/images/NatureMan.png";
 import WorkingTable from "../assets/images/WorkingTable.png";
 
-import project1 from "../assets/images/project1.jpg";
-
 import Card from "../components/card";
 import JustTag from "../components/justTag";
 import { Phone, Pin } from "../components/icons";
@@ -24,7 +22,7 @@ export class Main extends Component {
   }
 
   componentDidMount(){
-    this.props.getAllWorks();
+    this.props.getWorksList()
   }
 
   handleModalOpen = () => {
@@ -34,8 +32,15 @@ export class Main extends Component {
   handleModalClose = () => {
     this.setState({ showModal: false });
   };
+  
 
   render() {
+    const isShow = this.props.works.length > 0 ? true: false;
+    let worksList = []
+
+    if(isShow){
+      worksList = this.props.works;
+    }
     return (
       <div>
         <Modal closeModal={this.handleModalClose} isShow={this.state.showModal}>
@@ -121,15 +126,14 @@ export class Main extends Component {
 
         {/* exp */}
         <div className="exp" id="expId">
-          <h1 className="exp-title text-center">Pengalaman</h1>
+          <h1 className="exp-title text-center">Corat - coret</h1>
           {/* <Card src={project1} /> */}
-          <Slider sum={6}>
-            <Card src={project1} />
-            <Card src={project1} />
-            <Card src={project1} />
-            <Card src={project1} />
-            <Card src={project1} />
-            <Card src={project1} />
+          <Slider sum={this.props.works.length}>
+            {
+              worksList.map((item,index) => {
+                return <Card key={index} src={item.image} base={item.base} name={item.name} year={item.year} team={item.team} detail={item.detail}></Card>
+              })
+            }
           </Slider>
         </div>
 
@@ -162,7 +166,16 @@ function mapStateToProps(state) {
   }
 }
 
+const mapDispatchToProps = dispatch =>{
+  return {
+    getWorksList: ()=>{
+      dispatch(getAllWorks())
+    }
+  }
+}
+
+
 export default connect(
   mapStateToProps,
-  { getAllWorks }
+  mapDispatchToProps
 )(Main);
