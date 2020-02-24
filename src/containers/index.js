@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import LazyLoad from "react-lazy-load";
+import { connect } from "react-redux";
+import { getAllWorks } from "../actions";
 
 import About from "../assets/images/About.png";
 import NatureMan from "../assets/images/NatureMan.png";
@@ -13,12 +15,16 @@ import { Phone, Pin } from "../components/icons";
 import Modal from "../components/modal";
 import Slider from "../components/slider";
 
-class Main extends Component {
+export class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
       showModal: false
     };
+  }
+
+  componentDidMount(){
+    this.props.getAllWorks();
   }
 
   handleModalOpen = () => {
@@ -150,4 +156,13 @@ class Main extends Component {
   }
 }
 
-export default Main;
+function mapStateToProps(state) {
+  return {
+    works: state.works
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  { getAllWorks }
+)(Main);
