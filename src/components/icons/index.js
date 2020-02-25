@@ -53,8 +53,8 @@ export const ArrowRight = props => (
 
 export const Cross = props => (
   <svg
-    width={props.width?props.width:"24"}
-    height={props.height?props.height:"24"}
+    width={props.width ? props.width : "24"}
+    height={props.height ? props.height : "24"}
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -68,6 +68,28 @@ export const Cross = props => (
     <defs>
       <clipPath id="clip0">
         <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const Envelope = props => (
+  <svg
+    width="19"
+    height="19"
+    viewBox="0 0 19 19"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clipPath="url(#clip0)">
+      <path
+        d="M9.5 0C4.26179 0 0 4.26179 0 9.5C0 14.7382 4.26179 19 9.5 19C11.2998 19 13.0521 18.4938 14.5672 17.5371L13.9328 16.5328C12.6079 17.3701 11.0748 17.8125 9.5 17.8125C4.91644 17.8125 1.1875 14.0836 1.1875 9.50004C1.1875 4.91644 4.9164 1.1875 9.5 1.1875C14.0836 1.1875 17.8125 4.9164 17.8125 9.5V10.0938C17.8125 11.076 17.0135 11.875 16.0312 11.875C15.049 11.875 14.25 11.076 14.25 10.0938V5.93751H13.0625V6.3916C12.1911 5.39412 10.9254 4.75002 9.5 4.75002C6.8809 4.75002 4.75002 6.8809 4.75002 9.5C4.75002 12.1191 6.8809 14.25 9.5 14.25C11.2745 14.25 12.8064 13.2604 13.6218 11.815C14.1609 12.5672 15.0373 13.0625 16.0312 13.0625C17.6681 13.0625 19 11.7306 19 10.0937V9.49996C19 4.26179 14.7382 0 9.5 0V0ZM9.5 13.0625C7.5355 13.0625 5.93751 11.4645 5.93751 9.5C5.93751 7.53554 7.53554 5.93751 9.5 5.93751C11.4645 5.93751 13.0625 7.53554 13.0625 9.5C13.0625 11.4645 11.4645 13.0625 9.5 13.0625Z"
+        fill={props.color?props.color:"#FD8369"}
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0">
+        <rect width="19" height="19" fill="white" />
       </clipPath>
     </defs>
   </svg>
