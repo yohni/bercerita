@@ -32,7 +32,7 @@ class Slider extends Component {
       arrowL = <div className="arrow l-arrow"></div>;
     }
 
-    if (((-1*slideVal)+688+235)<this.props.sum*235) {
+    if (((-1*slideVal)+688+235)<this.props.sum*235 && this.props.sum*235>688) {
       arrowR = (
         <div className="arrow r-arrow" onClick={this.nextSlide}>
           <ArrowRight />
