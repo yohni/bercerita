@@ -9,7 +9,7 @@ import WorkingTable from "../assets/images/WorkingTable.png";
 
 import Card from "../components/card";
 import JustTag from "../components/justTag";
-import { Phone, Pin } from "../components/icons";
+import { Envelope, Phone, Pin } from "../components/icons";
 import Modal from "../components/modal";
 import Slider from "../components/slider";
 
@@ -21,8 +21,8 @@ export class Main extends Component {
     };
   }
 
-  componentDidMount(){
-    this.props.getWorksList()
+  componentDidMount() {
+    this.props.getWorksList();
   }
 
   handleModalOpen = () => {
@@ -32,13 +32,12 @@ export class Main extends Component {
   handleModalClose = () => {
     this.setState({ showModal: false });
   };
-  
 
   render() {
-    const isShow = this.props.works.length > 0 ? true: false;
-    let worksList = []
+    const isShow = this.props.works.length > 0 ? true : false;
+    let worksList = [];
 
-    if(isShow){
+    if (isShow) {
       worksList = this.props.works;
     }
     return (
@@ -129,21 +128,29 @@ export class Main extends Component {
           <h1 className="exp-title text-center">Corat - coret</h1>
           {/* <Card src={project1} /> */}
           <Slider sum={this.props.works.length}>
-            {
-              worksList.map((item,index) => {
-                return <Card key={index} src={item.image} base={item.base} name={item.name} year={item.year} team={item.team} detail={item.detail}></Card>
-              })
-            }
+            {worksList.map((item, index) => {
+              return (
+                <Card
+                  key={index}
+                  src={item.image}
+                  base={item.base}
+                  name={item.name}
+                  year={item.year}
+                  team={item.team}
+                  detail={item.detail}
+                ></Card>
+              );
+            })}
           </Slider>
         </div>
 
         {/* contact */}
         <div className="contact" id="contactId">
-            <img
-              className="contact-illustration"
-              src={NatureMan}
-              alt="Nature Man"
-            />
+          <img
+            className="contact-illustration"
+            src={NatureMan}
+            alt="Nature Man"
+          />
           <h1 className="contact-title">KONTAK</h1>
           <h2 className="contact-sub">Ayo Berteman!</h2>
           <div className="contact-main ml-5 mt-4">
@@ -152,6 +159,9 @@ export class Main extends Component {
             </JustTag>
             <JustTag text="+62856-4870-5773">
               <Phone />
+            </JustTag>
+            <JustTag text="yohni.123@gmail.com">
+              <Envelope />
             </JustTag>
           </div>
         </div>
@@ -163,19 +173,15 @@ export class Main extends Component {
 function mapStateToProps(state) {
   return {
     works: state.works
-  }
+  };
 }
 
-const mapDispatchToProps = dispatch =>{
+const mapDispatchToProps = dispatch => {
   return {
-    getWorksList: ()=>{
-      dispatch(getAllWorks())
+    getWorksList: () => {
+      dispatch(getAllWorks());
     }
-  }
-}
+  };
+};
 
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Main);
+export default connect(mapStateToProps, mapDispatchToProps)(Main);
