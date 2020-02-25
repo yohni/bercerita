@@ -28,8 +28,8 @@ html{
         padding: 164px 0 112px;
         height: 80vh;
 
-        @media (max-width:767px) {
-          
+        @media (max-width:425px) {
+          height: 74vh;
         }
 
         .col-12.col-md-6{
