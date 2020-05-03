@@ -8,6 +8,7 @@ import NatureMan from "../assets/images/NatureMan.png";
 import WorkingTable from "../assets/images/WorkingTable.png";
 
 import Card from "../components/card";
+import FloatingButton from "../components/foatingButton";
 import JustTag from "../components/justTag";
 import { Envelope, Phone, Pin } from "../components/icons";
 import Modal from "../components/modal";
@@ -165,6 +166,7 @@ export class Main extends Component {
             </JustTag>
           </div>
         </div>
+        <FloatingButton></FloatingButton>
       </div>
     );
   }
