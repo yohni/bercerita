@@ -8,7 +8,7 @@ import NatureMan from "../assets/images/NatureMan.png";
 import WorkingTable from "../assets/images/WorkingTable.png";
 
 import Card from "../components/card";
-import FloatingButton from "../components/foatingButton";
+import FloatingButton from "../components/floatingButton";
 import JustTag from "../components/justTag";
 import { Envelope, Phone, Pin } from "../components/icons";
 import Modal from "../components/modal";
@@ -18,7 +18,8 @@ export class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false
+      showModal: false,
+      showFAB: false
     };
   }
 
@@ -32,6 +33,14 @@ export class Main extends Component {
 
   handleModalClose = () => {
     this.setState({ showModal: false });
+  };
+
+  handleFABOpen = () => {
+    this.setState({ showFAB: true });
+  };
+
+  handleFABClose = () => {
+    this.setState({ showFAB: false });
   };
 
   render() {
@@ -166,7 +175,11 @@ export class Main extends Component {
             </JustTag>
           </div>
         </div>
-        <FloatingButton></FloatingButton>
+        <FloatingButton
+          isActive={this.state.showFAB}
+          fabActive={this.handleFABOpen}
+          fabDeactive={this.handleFABClose}
+        ></FloatingButton>
       </div>
     );
   }
