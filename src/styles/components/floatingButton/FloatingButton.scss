@@ -5,10 +5,42 @@
   min-height: 340px;
   right: 10%;
   bottom: 10%;
-  background: $yellowFederal;
-  z-index: 100;
+  background: $yellowAbsSmooth;
+  z-index: 9;
   border-radius: 12px;
   overflow: hidden;
+  transition: all 0.25s;
+
+  @media (max-width:424px) {
+    right: 0;
+    max-width: 320px;
+  }
+
+  &.hide-outer{
+    max-width: 64px;
+    max-height: 64px;
+    min-height: 64px;
+    padding: 0;
+    background: none;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.26);
+    border-radius: 34px 34px 8px 34px;
+
+    .fab-header{
+      transition: ease-out 0.01s;
+      .fab-header-title{
+        strong{
+          display: none;
+        }
+      }
+      .fab-close{
+        display: none;
+      }
+    }
+    
+    .fab-body{
+      display: none;
+    }
+  }
 
   .fab-header{
     width: 100%;
@@ -30,6 +62,24 @@
 
       .fab-header-icon{
         margin-right: 8px;
+
+        &.fab-active{
+          background: $redKaraoke;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 64px;
+          height: 64px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          cursor: pointer;
+          transition: all 0.25s;
+
+          &:hover{
+            background: $redRadical;
+          }
+        }
       }
     }
   }
