@@ -88,11 +88,21 @@
     z-index: 101;
     top: 72px;
     display: flex;
+    flex-direction: column;
     min-width: 100%;
+    transition: all 0.2s;
     padding: 0px 24px 18px;
 
     .fab-writer{
       width: 100%;
+      overflow: hidden;
+      height: 0;
+
+      &.active{
+        height: 100%;
+        overflow: visible;
+        
+      }
 
       form{
         display: flex;
@@ -121,6 +131,30 @@
           background: $blueDark;
         }
       }
+    }
+
+    .fab-success{
+      position: relative;
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      overflow: hidden;
+      height: 0;
+
+      &.active{
+        overflow: visible;
+        min-height: 240px;
+
+        .fab-success-icon{
+          margin-bottom: 12px;
+        }
+      }
+
+      
     }
   }
 }

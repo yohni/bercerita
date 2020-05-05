@@ -62,7 +62,7 @@ export const Cross = props => (
     <g clipPath="url(#clip0)">
       <path
         d="M23.9024 22.9889L12.8539 12.0005L23.8445 0.949266C24.0613 0.731313 24.0605 0.378838 23.8426 0.161972C23.6246 -0.0548936 23.2721 -0.0538066 23.0553 0.164146L12.0671 11.2137L1.01703 0.223119C0.799075 0.00625281 0.4466 0.00706806 0.229734 0.225021C0.0128686 0.442974 0.0136839 0.795449 0.231637 1.01231L11.2801 12.0005L0.290609 23.0506C0.0737432 23.2685 0.0745585 23.621 0.292511 23.8379C0.510464 24.0547 0.862939 24.0539 1.07981 23.836L12.0671 12.7875L23.1148 23.7781C23.3327 23.9949 23.6852 23.9941 23.9021 23.7762C24.1189 23.5582 24.1181 23.2057 23.9002 22.9889H23.9024Z"
-        fill={props.color? props.color : "#303C42"}
+        fill={props.color ? props.color : "#303C42"}
       />
     </g>
     <defs>
@@ -97,8 +97,8 @@ export const Envelope = props => (
 
 export const Pencil = props => (
   <svg
-    width={props.width? props.width :"24"}
-    height={props.height? props.height :"24"}
+    width={props.width ? props.width : "24"}
+    height={props.height ? props.height : "24"}
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -237,5 +237,24 @@ export const SocialTwitter = () => (
         <rect width="24.0001" height="24" fill="white" />
       </clipPath>
     </defs>
+  </svg>
+);
+
+export const SuccessCircle = props => (
+  <svg
+  width={props.width ? props.width : "52"}
+  height={props.height ? props.height : "52"}
+    viewBox="0 0 52 52"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M26.0003 0.000350175C40.3596 0.000350175 52.0002 11.641 52.0002 26.0003C52.0002 40.3596 40.3596 52.0002 26.0003 52.0002C11.641 52.0002 0.000351985 40.3596 0.000351985 26.0003C-0.0405066 11.6817 11.5338 0.0412088 25.8523 0.000350175C25.9016 0.000208796 25.9509 0.000208796 26.0003 0.000350175Z"
+      fill="#3BB54A"
+    />
+    <path
+      d="M40.4034 18.8352L21.9376 37.3011L11.5967 27.0341L15.807 22.8978L21.9376 28.9546L36.1933 14.6989L40.4034 18.8352Z"
+      fill="#D4E1F4"
+    />
   </svg>
 );

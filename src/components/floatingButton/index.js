@@ -1,13 +1,19 @@
 import React, { Component } from "react";
-import { Cross, Pencil } from "../icons";
+import { Cross, Pencil, SuccessCircle } from "../icons";
 
 class FloatingButton extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      status: "open"
+      writing: true,
+      name: '',
+      story: ''
     };
   }
+
+  handleClick = () => (
+    this.setState({writing: false})
+  )
 
   render() {
     return (
@@ -18,7 +24,7 @@ class FloatingButton extends Component {
               className={`fab-header-icon ${
                 !this.props.isActive ? "fab-active" : ""
               }`}
-              onClick={!this.props.isActive? this.props.fabActive: null}
+              onClick={!this.props.isActive ? this.props.fabActive : null}
             >
               <Pencil width={18} height={18} />
             </div>
@@ -26,19 +32,25 @@ class FloatingButton extends Component {
               <strong>Kolom Curhat</strong>
             </div>
           </div>
-          <div onClick={this.props.fabDeactive}>
+          <div className="fab-close" onClick={this.props.fabDeactive}>
             <Cross width={18} height={18} color="#ffffff" />
           </div>
         </div>
         <div className="fab-body">
-          <div className="fab-writer">
+          <div className={`fab-writer ${this.state.writing ? "active" : ""}`}>
             <form>
               <input type="text" placeholder="Siapa Namamu?" />
               <textarea placeholder="Curhat Disini ya, Nanti aku baca deh" />
-              <input className="send-btn" type="submit" value="Kirim" />
+              <input className="send-btn" type="submit" value="Kirim" onClick={this.handleClick} />
             </form>
           </div>
-          <div className="fab-success"></div>
+
+          <div className={`fab-success ${!this.state.writing ? "active" : ""}`}>
+            <div className="fab-success-icon">
+              <SuccessCircle width={32} height={32} />
+            </div>
+            <div>Curhatmu Sudah Terkirim</div>
+          </div>
         </div>
       </div>
     );
