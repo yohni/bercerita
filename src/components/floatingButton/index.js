@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { postStories } from "../../actions";
+
 import { Cross, Pencil, SuccessCircle } from "../icons";
 
 class FloatingButton extends Component {
@@ -14,6 +16,18 @@ class FloatingButton extends Component {
   handleClick = () => (
     this.setState({writing: false})
   )
+
+  postStory = (event) => {
+    const { name, story } = this.state;
+    const { dispatch } = this.props
+    if(name && story){
+      dispatch(postStories({name: name, story: story}))
+      .then(
+        this.setState({name:'', story: ''})
+      )
+    }
+  }
+    
 
   render() {
     return (
@@ -38,7 +52,7 @@ class FloatingButton extends Component {
         </div>
         <div className="fab-body">
           <div className={`fab-writer ${this.state.writing ? "active" : ""}`}>
-            <form>
+            <form onSubmit={this.postStory}>
               <input type="text" placeholder="Siapa Namamu?" />
               <textarea placeholder="Curhat Disini ya, Nanti aku baca deh" />
               <input className="send-btn" type="submit" value="Kirim" onClick={this.handleClick} />
