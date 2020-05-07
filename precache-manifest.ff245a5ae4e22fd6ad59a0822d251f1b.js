@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b2ec783c8208aaf5fde8962e3e8b803",
+    "revision": "0c789ee65d08d80522276144636af215",
     "url": "/bercerita/index.html"
   },
   {
-    "revision": "18f21c2e4fda3f140635",
+    "revision": "6be56d4ceb2f3dc0e11a",
     "url": "/bercerita/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "8e1a4a9dbfc7f7678f7c",
-    "url": "/bercerita/static/css/main.84c549da.chunk.css"
+    "revision": "536a04f4912c4463a20a",
+    "url": "/bercerita/static/css/main.7742a2dd.chunk.css"
   },
   {
-    "revision": "18f21c2e4fda3f140635",
-    "url": "/bercerita/static/js/2.a3a4b7e4.chunk.js"
+    "revision": "6be56d4ceb2f3dc0e11a",
+    "url": "/bercerita/static/js/2.6229e9fc.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/bercerita/static/js/2.a3a4b7e4.chunk.js.LICENSE.txt"
+    "url": "/bercerita/static/js/2.6229e9fc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8e1a4a9dbfc7f7678f7c",
-    "url": "/bercerita/static/js/main.ba1f4a51.chunk.js"
+    "revision": "536a04f4912c4463a20a",
+    "url": "/bercerita/static/js/main.1f32e65c.chunk.js"
   },
   {
     "revision": "35abded54050d788f8ca",
