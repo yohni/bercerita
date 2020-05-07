@@ -188,7 +188,6 @@ export class Main extends Component {
 function mapStateToProps(state) {
   return {
     works: state.works,
-    story: state.story
   };
 }
 

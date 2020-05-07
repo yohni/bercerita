@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { postStories } from "../../actions";
+import { connect } from "react-redux";
 
 import { Cross, Pencil, SuccessCircle } from "../icons";
 
@@ -8,26 +9,21 @@ class FloatingButton extends Component {
     super(props);
     this.state = {
       writing: true,
-      name: '',
-      story: ''
+      name: "",
+      story: ""
     };
   }
 
-  handleClick = () => (
-    this.setState({writing: false})
-  )
+  handleClick = () => this.setState({ writing: false });
 
-  postStory = (event) => {
+  postStory = event => {
+    event.preventDefault();
     const { name, story } = this.state;
-    const { dispatch } = this.props
-    if(name && story){
-      dispatch(postStories({name: name, story: story}))
-      .then(
-        this.setState({name:'', story: ''})
-      )
+    if (name && story) {
+      console.log("Hallo")
+      this.props.postYourStory({name: name, story: story})
     }
-  }
-    
+  };
 
   render() {
     return (
@@ -53,9 +49,21 @@ class FloatingButton extends Component {
         <div className="fab-body">
           <div className={`fab-writer ${this.state.writing ? "active" : ""}`}>
             <form onSubmit={this.postStory}>
-              <input type="text" placeholder="Siapa Namamu?" />
-              <textarea placeholder="Curhat Disini ya, Nanti aku baca deh" />
-              <input className="send-btn" type="submit" value="Kirim" onClick={this.handleClick} />
+              <input
+                type="text"
+                placeholder="Siapa Namamu?"
+                onChange={e => this.setState({ name: e.target.value })}
+              />
+              <textarea 
+                placeholder="Curhat Disini ya, Nanti aku baca deh" 
+                onChange={e => this.setState({ story: e.target.value })}
+                />
+              <input
+                className="send-btn"
+                type="submit"
+                value="Kirim"
+                onClick={this.handleClick}
+              />
             </form>
           </div>
 
@@ -71,4 +79,18 @@ class FloatingButton extends Component {
   }
 }
 
-export default FloatingButton;
+function mapStateToProps(state) {
+  return {
+    story: state.story,
+  };
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    postYourStory: (event) => {
+      dispatch(postStories(event));
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(FloatingButton);

@@ -31,7 +31,7 @@ export const getAllWorks = () => {
 
 export const postStories = (payload) => {
   return (dispatch) => {
-    axios.post(`${baseAPI}/stories.json`, payload)
+    return axios.post(`${baseAPI}/stories.json`, payload)
     .then(res => {
       dispatch(postStory(res.data))
     })
